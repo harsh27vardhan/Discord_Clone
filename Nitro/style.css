@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+header{
+    width: 80%;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.brand-logo{
+    height: 35px;
+}
+.brand-logo img{
+    height: 100%;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* padding: auto 30px; */
+    list-style: none;
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+header button{
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#myVideo{
+    position: absolute;
+    top: 0;
+    z-index: -100;
+    width: 100%;
+}
+.hero .hero-text{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    color: white;
+    gap: 1.5rem;
+}
+.hero .hero-text h1{
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 48px;
+}
+.hero .hero-text p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+#rocket-image{
+    z-index: -200;
+}
+.plans{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 8rem;
+}
+.plan-card{
+    width: 50%;
+    color: white;
+    background-image: linear-gradient(225deg, #007cc2 20%, #5865f2);
+    background-color: aqua;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem;
+}
+.plan-card .plan-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+.voilet{
+    background-image: linear-gradient(135deg, #8547c6 25%, #b845c1 62%, #ab5d8a 95%)
+}
+.plan-card .plan-card-text .plan-card-container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: start;
+}
+.plan-card .plan-card-container img{
+    height: 24px;
+}
+.plan-card-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 40px;
+}
+.plan-card-btn a{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+.plan-card-btn:hover{
+    color: #5865f2;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.297);
+}
+section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 100px 0;
+    margin-bottom: 0;
+}
+section h2{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: center;
+    width: 50%;
+}
+section button{
+    background-color: #3b3b3b;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    border-radius: 28px;
+}
+.perk-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+.perk-card{
+    width: 49%;
+    background-color: #f6f6f6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.perk-card h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    width: 400px;
+}
+.packs{
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    padding: 70px 80px 100px 100px ;
+    gap: 0.5rem;
+}
+.pack h2{
+    margin: 1rem;
+}
+.pack-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0px;
+    border-bottom: 2px solid #dee1e3;
+}
+.pack-container .features{
+    width: 60%;
+}
+.ticks{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+    width: 20%;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.nitro-ticks{
+    margin: 0;
+}
+.ticks p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+#image3{
+    display: none;
+}
+#image4{
+    display: none;
+}
+.ticks-btn{
+    border: none;
+}
+.ticks-btn .ticks button{
+    width: 90%;
+    background-color: #5865f2;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.ticks-btn .ticks button:hover{
+    background-color: #7289da;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.301);
+}
+.ticks-imgs{
+    display: none;
+}
+.purple-box{
+    border: 2px solid purple;
+    width: 20%;
+    position: absolute;
+    height: 100%;
+    /* right: 5rem; */
+}
+.faqs{
+    position: relative;
+}
+.faqs ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+.faqs ul li{
+    padding: 8px;
+    font-size: 16px;
+    text-wrap: nowrap   ;
+}
+#g-p{
+    font-weight: 600;
+    color: #5865f2;
+    border-bottom: 2px solid #5865f2;
+}
+.ques-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.question{
+    display: flex;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    background-color: #f6f6f6;
+    color: #1b1c23;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+.question p{
+    width: 80%;
+}
+.faqs>#hello-img{
+    position: absolute;
+    top: -50px;
+    right: -12.5%;
+}
+.faqs>#sparkle{
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+}
+.fun{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 5rem;
+    margin-bottom: 0;
+    background-image: linear-gradient(135deg, #8547c6 10%, #b845c1 50%, #ab5d8a);
+    padding: 92px 0;
+    position: relative;
+}
+.fun h2{
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.fun button{
+    display: inlne;
+    border-radius: 28px;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+#peace{
+    position: absolute;
+    left: 0;
+    height: 95%;
+}
+#smile{
+    position: absolute;
+    right: 0;
+    height: 95%;
+}
+
+
+
+
+@media (max-width: 1300px){
+    header{
+        width: 90%;
+    }
+    .hero .hero-text{
+        width: 35%;
+    }
+    section h2{
+        width: 60%;
+    }
+    .ticks-btn .ticks button{
+        padding: 5px 8px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .ques-container{
+        width: 90%;
+    }
+}
+@media (max-width: 1000px) {
+    header nav{
+        display: none;
+    }
+    #myVideo{
+        display: none;
+    }
+    .hero{
+        background: url(./assets/media/discord-background.svg);
+        flex-direction: column;
+        z-index: -100;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: -80px;
+        gap: 0;
+        padding: 5rem 0;
+        margin: 0;
+    }
+    .hero .hero-text{
+        width: 50%;
+        margin: 2rem;
+    }
+    #rocket-image{
+        z-index: 5;
+        height: 282px;
+    }
+    .plans{
+        flex-direction: column;
+        margin-top: -8rem;   
+    }
+    .plan-card{
+        width: 100%;
+    }
+    section{
+        gap: 2rem;
+    }
+    section h2{
+        width: 70%;
+    }
+    .perk-card-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .perk-card-container .perk-card{
+        width: 100%;
+    }
+    .pack-container .features{
+        width: 50%;
+    }
+    .pack-container .ticks{
+        width: 25%;
+    }
+}
+
+@media (max-width: 834px){
+    .hero .hero-text{
+        width: 80%;
+    }
+    .hero .hero-text h1{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+    .hero .hero-text p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    #rocket-image{
+        height: 270px;
+    }
+    section h2{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 42px;
+        width: 100%;
+    }
+    .perks{
+        width: 80%;
+    }
+    .perk-card-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .perk-card-container .perk-card{
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .perk-card-container .perk-card h3{
+        font-style: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        width: 80%;
+    }
+    .packs{
+        width: 90%;
+        padding: 24px;
+    }
+    #image1,#image2{
+        display: none;
+    }
+    #image3,#image4{
+        display: block;
+        height: 15px;
+    }
+    .perk-card-container .perk-card img{
+        width: 80%;
+    }
+    /* .ticks{
+        width: 54%;
+    } */
+    .ticks p{
+        /* width: 50%; */
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
+    .ticks-btn{
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .ticks-btn .ticks{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    .ticks-btn .ticks button{
+        width: 40%;
+    }
+    .ticks-imgs{
+        display: block;
+    }
+    .faqs ul{
+        width: 70%;
+    }
+    .faqs>img{
+        display: none;
+    }
+    .fun h2{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    .fun>img{
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    header{
+        width: 100%;
+    }
+    header .brand-logo img{
+        height: 30px;
+    }
+    #rocket-image{
+        width: 100%;
+    }
+    #image3,#image4{
+        width: 40px;
+    }
+    .ticks button{
+        /* text-wrap: nowrap; */
+        padding: 4px 6px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .ticks-imgs{
+        width: 75px;
+    }
+    .faqs ul{
+        width: 85%;
+    }
+    .fun button{
+        width: 80%;
+    }
+    .fun h2{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
