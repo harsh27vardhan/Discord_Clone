@@ -88,7 +88,7 @@ header button{
     justify-content: center;
     align-items: stretch;
     gap: 1rem;
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 .plan-card{
     width: 50%;
@@ -200,6 +200,7 @@ section button{
     border-radius: 8px;
     padding: 70px 80px 100px 100px ;
     gap: 0.5rem;
+    position: relative;
 }
 .pack h2{
     margin: 1rem;
@@ -258,10 +259,12 @@ section button{
 }
 .purple-box{
     border: 2px solid purple;
-    width: 20%;
+    border-radius: 16px;
     position: absolute;
-    height: 100%;
-    /* right: 5rem; */
+    width: 18%;
+    height: 82%;
+    right: 70px;
+    bottom : 100px;
 }
 .faqs{
     position: relative;
@@ -367,6 +370,9 @@ section button{
     section h2{
         width: 60%;
     }
+    .plans{
+        margin-top: 0.5rem;
+    }
     .ticks-btn .ticks button{
         padding: 5px 8px;
         font-size: 12px;
@@ -375,6 +381,11 @@ section button{
     }
     .ques-container{
         width: 90%;
+    }
+    .purple-box{
+        width: 17%;
+        height: 82%;
+        right: 75px;
     }
 }
 @media (max-width: 1000px) {
@@ -430,6 +441,11 @@ section button{
     }
     .pack-container .ticks{
         width: 25%;
+    }
+    .purple-box{
+        width: 20%;
+        height: 82%;
+        right: 75px;
     }
 }
 
@@ -531,6 +547,12 @@ section button{
     .fun>img{
         display: none;
     }
+    .purple-box{
+        width: 25%;
+        height: 85%;
+        right: 24px;
+        bottom: 150px;
+    }
 }
 @media (max-width:425px) {
     header{
@@ -564,5 +586,15 @@ section button{
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
+    }
+    .purple-box{
+        width: 22%;
+        height: 85%;
+        right: 24px;
+    }
+}
+@media (max-width:370px) and (min-width: 340px){
+    .purple-box{
+        height: 86%;
     }
 }
